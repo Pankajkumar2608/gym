@@ -3,7 +3,7 @@ import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { MD3DarkTheme as PaperDarkTheme, PaperProvider } from 'react-native-paper';
 import 'react-native-reanimated';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 // Create custom theme
 const customTheme = {
@@ -19,7 +19,8 @@ const customTheme = {
 
 export default function RootLayout() {
   return (
-    <SafeAreaProvider style={{ flex: 1, paddingTop: 20 }} >
+    <SafeAreaProvider >
+      <SafeAreaView style={{ flex: 1, backgroundColor: '#000' }}>
       <PaperProvider theme={customTheme}>
         <ThemeProvider value={DarkTheme}>
           <Stack
@@ -41,6 +42,7 @@ export default function RootLayout() {
           <StatusBar style="light" />
         </ThemeProvider>
       </PaperProvider>
+      </SafeAreaView>
     </SafeAreaProvider>
   );
 }

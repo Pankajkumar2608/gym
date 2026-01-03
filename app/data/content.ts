@@ -15,7 +15,9 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep your feet flat on the ground.', 'Do not bounce the bar off your chest.', 'Keep your elbows at a 45-degree angle.'],
     defaultSets: 4,
-    defaultReps: '8-12'
+    defaultReps: '8-12',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-bench-press-front.mp4',
+    //thumbnail: 'https://media.giphy.com/media/3o7aCQZKzZKzZKzZKzZ/giphy.gif'
   },
   'incline_db_press': {
     id: 'incline_db_press',
@@ -30,7 +32,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Focus on the stretch at the bottom.', 'Don\'t bang the dumbbells together at the top.'],
     defaultSets: 3,
-    defaultReps: '10-12'
+    defaultReps: '10-12',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-incline-bench-press-front.mp4'
   },
   'cable_flies': {
     id: 'cable_flies',
@@ -45,7 +48,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep slight bend in elbows.', 'Focus on squeezing chest at peak contraction.'],
     defaultSets: 3,
-    defaultReps: '12-15'
+    defaultReps: '12-15',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-cable-standing-fly-front.mp4'
   },
   'dips': {
     id: 'dips',
@@ -60,7 +64,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Lean forward for more chest activation.', 'Don\'t lock out elbows at top.'],
     defaultSets: 3,
-    defaultReps: '8-12'
+    defaultReps: '8-12',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-chest-dip-front.mp4'
   },
   'push_ups': {
     id: 'push_ups',
@@ -75,7 +80,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep body in straight line.', 'Don\'t let hips sag or pike up.'],
     defaultSets: 3,
-    defaultReps: '15-20'
+    defaultReps: '15-20',
+    gif: "https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-push-up-front.mp4"
   },
 
   // BACK EXERCISES
@@ -91,7 +97,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Avoid swinging.', 'Focus on pulling with your elbows.'],
     defaultSets: 3,
-    defaultReps: 'AMRAP'
+    defaultReps: 'AMRAP',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-pull-up-front.mp4'
   },
   'deadlift': {
     id: 'deadlift',
@@ -106,7 +113,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep back neutral.', 'Bar should travel close to legs.'],
     defaultSets: 4,
-    defaultReps: '5'
+    defaultReps: '5',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-deadlift-front.mp4'
   },
   'barbell_rows': {
     id: 'barbell_rows',
@@ -121,7 +129,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep lower back flat.', 'Pull with elbows, not hands.'],
     defaultSets: 4,
-    defaultReps: '8-10'
+    defaultReps: '8-10',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-bent-over-row-front.mp4'
   },
   'lat_pulldown': {
     id: 'lat_pulldown',
@@ -135,7 +144,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Don\'t lean back excessively.', 'Focus on using lats, not arms.'],
     defaultSets: 3,
-    defaultReps: '10-12'
+    defaultReps: '10-12',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-cable-lat-pulldown-front.mp4'
   },
   'seated_cable_row': {
     id: 'seated_cable_row',
@@ -149,7 +159,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep torso stationary.', 'Squeeze at peak contraction.'],
     defaultSets: 3,
-    defaultReps: '10-12'
+    defaultReps: '10-12',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-cable-seated-row-front.mp4'
   },
   'face_pulls': {
     id: 'face_pulls',
@@ -164,7 +175,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep elbows high.', 'External rotate at the end of movement.'],
     defaultSets: 3,
-    defaultReps: '15-20'
+    defaultReps: '15-20',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-cable-face-pull-front.mp4'
   },
 
   // LEG EXERCISES
@@ -181,7 +193,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep your chest up.', 'Drive through your heels.', 'Keep knees pushed out.'],
     defaultSets: 4,
-    defaultReps: '6-8'
+    defaultReps: '6-8',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-squat-front.mp4'
   },
   'leg_press': {
     id: 'leg_press',
@@ -195,7 +208,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Don\'t let lower back round.', 'Don\'t lock out knees at top.'],
     defaultSets: 4,
-    defaultReps: '10-12'
+    defaultReps: '10-12',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-machine-leg-press-front.mp4'
   },
   'lunges': {
     id: 'lunges',
@@ -209,7 +223,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep torso upright.', 'Don\'t let front knee pass toes.'],
     defaultSets: 3,
-    defaultReps: '12 each leg'
+    defaultReps: '12 each leg',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-lunge-front.mp4'
   },
   'leg_curl': {
     id: 'leg_curl',
@@ -223,7 +238,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Don\'t lift hips off pad.', 'Control the negative.'],
     defaultSets: 3,
-    defaultReps: '10-12'
+    defaultReps: '10-12',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-machine-lying-leg-curl-side.mp4'
   },
   'leg_extension': {
     id: 'leg_extension',
@@ -237,7 +253,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Don\'t use momentum.', 'Pause at top contraction.'],
     defaultSets: 3,
-    defaultReps: '12-15'
+    defaultReps: '12-15',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-machine-leg-extension-side.mp4'
   },
   'calf_raises': {
     id: 'calf_raises',
@@ -251,7 +268,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Full range of motion.', 'Pause at top and bottom.'],
     defaultSets: 4,
-    defaultReps: '15-20'
+    defaultReps: '15-20',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-machine-standing-calf-raise-side.mp4'
   },
   'romanian_deadlift': {
     id: 'romanian_deadlift',
@@ -265,7 +283,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep bar close to legs.', 'Slight bend in knees.'],
     defaultSets: 3,
-    defaultReps: '10-12'
+    defaultReps: '10-12',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-romanian-deadlift-front.mp4'
   },
 
   // SHOULDER EXERCISES
@@ -281,7 +300,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep core tight.', 'Don\'t lean back excessively.'],
     defaultSets: 4,
-    defaultReps: '6-8'
+    defaultReps: '6-8',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-overhead-press-front.mp4'
   },
   'lateral_raises': {
     id: 'lateral_raises',
@@ -295,7 +315,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Lead with elbows.', 'Don\'t swing the weights.'],
     defaultSets: 3,
-    defaultReps: '12-15'
+    defaultReps: '12-15',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-lateral-raise-front.mp4'
   },
   'front_raises': {
     id: 'front_raises',
@@ -309,7 +330,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep slight bend in elbows.', 'Don\'t swing or use momentum.'],
     defaultSets: 3,
-    defaultReps: '12-15'
+    defaultReps: '12-15',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-front-raise-front.mp4'
   },
   'rear_delt_flies': {
     id: 'rear_delt_flies',
@@ -323,7 +345,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep torso stable.', 'Squeeze shoulder blades together.'],
     defaultSets: 3,
-    defaultReps: '15-20'
+    defaultReps: '15-20',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-rear-delt-fly-front.mp4'
   },
   'arnold_press': {
     id: 'arnold_press',
@@ -337,7 +360,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Control the rotation.', 'Full range of motion.'],
     defaultSets: 3,
-    defaultReps: '10-12'
+    defaultReps: '10-12',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-arnold-press-front.mp4'
   },
 
   // ARM EXERCISES
@@ -353,7 +377,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Don\'t swing body.', 'Keep elbows pinned to sides.'],
     defaultSets: 3,
-    defaultReps: '10-12'
+    defaultReps: '10-12',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-curl-front.mp4'
   },
   'hammer_curls': {
     id: 'hammer_curls',
@@ -367,7 +392,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep elbows stationary.', 'Don\'t use momentum.'],
     defaultSets: 3,
-    defaultReps: '10-12'
+    defaultReps: '10-12',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-hammer-curl-front.mp4'
   },
   'tricep_pushdown': {
     id: 'tricep_pushdown',
@@ -381,7 +407,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep elbows pinned to sides.', 'Don\'t lean forward.'],
     defaultSets: 3,
-    defaultReps: '12-15'
+    defaultReps: '12-15',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-cable-pushdown-front.mp4'
   },
   'skull_crushers': {
     id: 'skull_crushers',
@@ -395,7 +422,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep upper arms stationary.', 'Control the weight.'],
     defaultSets: 3,
-    defaultReps: '10-12'
+    defaultReps: '10-12',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-skullcrusher-side.mp4'
   },
   'preacher_curls': {
     id: 'preacher_curls',
@@ -409,7 +437,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Don\'t go too heavy.', 'Full range of motion.'],
     defaultSets: 3,
-    defaultReps: '10-12'
+    defaultReps: '10-12',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-dumbbell-preacher-curl-front.mp4'
   },
   'close_grip_bench': {
     id: 'close_grip_bench',
@@ -423,7 +452,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Hands about shoulder-width apart.', 'Keep elbows close to body.'],
     defaultSets: 3,
-    defaultReps: '8-10'
+    defaultReps: '8-10',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-close-grip-bench-press-front.mp4'
   },
 
   // CORE EXERCISES
@@ -439,7 +469,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Don\'t let hips sag or pike.', 'Squeeze glutes and abs.'],
     defaultSets: 3,
-    defaultReps: '45-60 sec'
+    defaultReps: '45-60 sec',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-front-plank-side.mp4'
   },
   'crunches': {
     id: 'crunches',
@@ -453,7 +484,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep lower back pressed into floor.', 'Exhale as you crunch up.'],
     defaultSets: 3,
-    defaultReps: '15-20'
+    defaultReps: '15-20',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-crunch-side.mp4'
   },
   'leg_raises': {
     id: 'leg_raises',
@@ -467,7 +499,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep legs straight for more difficulty.', 'Control the descent.'],
     defaultSets: 3,
-    defaultReps: '10-15'
+    defaultReps: '10-15',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-hanging-leg-raise-front.mp4'
   },
   'russian_twists': {
     id: 'russian_twists',
@@ -481,7 +514,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep feet elevated.', 'Control the rotation.'],
     defaultSets: 3,
-    defaultReps: '20 total'
+    defaultReps: '20 total',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-russian-twist-front.mp4'
   },
   'cable_woodchops': {
     id: 'cable_woodchops',
@@ -495,7 +529,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Rotate from hips and core.', 'Keep arms extended.'],
     defaultSets: 3,
-    defaultReps: '12 each side'
+    defaultReps: '12 each side',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-cable-woodchop-front.mp4'
   },
   'dead_bug': {
     id: 'dead_bug',
@@ -509,7 +544,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep lower back pressed into floor.', 'Move slowly and controlled.'],
     defaultSets: 3,
-    defaultReps: '10 each side'
+    defaultReps: '10 each side',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-dead-bug-front.mp4'
   },
 
   // CARDIO
@@ -525,7 +561,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep elbows close to body.', 'Start with short intervals.'],
     defaultSets: 5,
-    defaultReps: '1 min'
+    defaultReps: '1 min',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-jump-rope-front.mp4'
   },
   'burpees': {
     id: 'burpees',
@@ -539,7 +576,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Maintain good form over speed.', 'Land softly.'],
     defaultSets: 3,
-    defaultReps: '10-15'
+    defaultReps: '10-15',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-burpee-front.mp4'
   },
   'mountain_climbers': {
     id: 'mountain_climbers',
@@ -553,7 +591,8 @@ export const EXERCISES: Record<string, Exercise> = {
     ],
     tips: ['Keep hips level.', 'Maintain plank position.'],
     defaultSets: 3,
-    defaultReps: '30 sec'
+    defaultReps: '30 sec',
+    gif: 'https://media.musclewiki.com/media/uploads/videos/branded/male-bodyweight-mountain-climber-front.mp4'
   }
 };
 

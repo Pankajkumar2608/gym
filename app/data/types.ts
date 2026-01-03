@@ -17,6 +17,8 @@ export interface Exercise {
   videoUrl?: string;
   defaultSets: number;
   defaultReps: string;
+  gif?: string;
+  thumbnail?: string;
 }
 
 export interface UserExerciseConfig {

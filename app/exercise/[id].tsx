@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { Button, Card, Chip, Divider, Text } from 'react-native-paper';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-
+import { Video } from 'expo-av';
 const MUSCLE_COLORS: Record<string, string> = {
     'Chest': '#ff6b6b',
     'Back': '#4ecdc4',
@@ -43,8 +43,15 @@ export default function ExerciseDetailScreen() {
                 {/* Hero Section */}
                 <View style={styles.heroSection}>
                     <View style={styles.mediaPlaceholder}>
-                        <Text style={styles.placeholderEmoji}>🏋️</Text>
-                        <Text style={styles.placeholderText}>Exercise Animation</Text>
+                        <Video
+                            source={{ uri: exercise.gif }}
+                            style={styles.video}
+                            resizeMode="contain"
+                            shouldPlay
+                            isLooping
+                            isMuted
+                            useNativeControls={false}
+                        />
                     </View>
                 </View>
 
@@ -209,6 +216,10 @@ const styles = StyleSheet.create({
     },
     infoSection: {
         padding: 16,
+    },
+    video: {
+        width: '100%',
+        height: '100%',
     },
     title: {
         color: '#fff',
