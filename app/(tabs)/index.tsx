@@ -7,6 +7,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { RefreshControl, ScrollView, StyleSheet, View } from 'react-native';
 import { Avatar, Button, Card, IconButton, Text } from 'react-native-paper';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Image } from 'expo-image';
 
 export default function HomeScreen() {
   const router = useRouter();
@@ -223,6 +224,15 @@ export default function HomeScreen() {
               <Text style={styles.actionLabel}>View Progress</Text>
             </Card.Content>
           </Card>
+          <Card style={styles.actionCard} onPress={() => router.push('/bmi')}>
+            <Card.Content style={styles.actionContent}>
+              <View style={[styles.actionIcon, { backgroundColor: 'rgba(187, 134, 252, 0.2)' }]}>
+                <Image source={require('@/assets/emoji/image.png')} style={{ width: 24, height: 24 }} />
+              </View>
+              <Text style={styles.actionLabel}>BMI Calculator</Text>
+            </Card.Content>
+          </Card>
+          
         </View>
 
       </ScrollView>

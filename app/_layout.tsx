@@ -38,6 +38,7 @@ export default function RootLayout() {
             <Stack.Screen name="workout/[day]" options={{ title: 'Workout' }} />
             <Stack.Screen name="routine/[id]" options={{ title: 'Workout Details' }} />
             <Stack.Screen name="exercise/[id]" options={{ title: 'Exercise Guide' }} />
+            <Stack.Screen name="bmi" options={{title:"BMI Calculator"}}/>
           </Stack>
           <StatusBar style="light" />
         </ThemeProvider>
